@@ -1,0 +1,35 @@
+@Studenty_BackEnd_HostAddress = https://localhost:7117
+
+GET {{Studenty_BackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{Studenty_BackEnd_HostAddress}}/event/
+
+###
+
+POST {{CRUD_1_HostAddress}}/event/
+Content-Type: application/json
+
+{
+    "name": "Hawaii",
+    "isGlutenFree": false
+}
+
+###
+
+PUT {{CRUD_1_HostAddress}}/event/3
+Content-Type: application/json
+
+{
+    "id": 3,
+    "name": "Hawaiian",
+    "isGlutenFree": false
+}
+
+###
+
+DELETE {{CRUD_1_HostAddress}}/event/2
+
+###
